@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    n = int(raw_input())
+    arr = map(int, raw_input().split())
+    
+    def largest(arr) :
+        largest = 0
+        for x in arr :
+            if largest < x :
+                largest = x
+        return largest
+    
+    def secondLargest(arr, largest) :
+        secondLargest = 0
+        for x in arr :
+            if secondLargest < x and x < largest:
+                secondLargest = x
+        return secondLargest   
+    
+    print(secondLargest(arr, largest(arr)))
