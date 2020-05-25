@@ -3,12 +3,12 @@ if __name__ == '__main__':
     n = int(raw_input())
     arr = map(int, raw_input().split())
     
-    def secondLargest(arr) :
+    def second_largest(arr) :
         largest = max(arr)
-        secondLargest = min(arr)
+        second_largest = min(arr)
         for x in arr :
-            if secondLargest < x and x < largest:
-                secondLargest = x
-        return secondLargest   
+            if second_largest < x and x < largest:
+                second_largest = x
+        return second_largest   
     
-    print(secondLargest(arr))
+    print(second_largest(arr))
