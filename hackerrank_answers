@@ -76,3 +76,9 @@ if __name__ == '__main__':
             list.reverse()     
         if command[0] == "append":
             list.append(int(command[1]))   
+            
+#turn a list into a tuple and hash it
+if __name__ == '__main__':
+    n = int(raw_input())
+    integer_list = map(int, raw_input().split())
+    print(hash(tuple(integer_list)))
