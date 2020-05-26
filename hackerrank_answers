@@ -82,3 +82,19 @@ if __name__ == '__main__':
     n = int(raw_input())
     integer_list = map(int, raw_input().split())
     print(hash(tuple(integer_list)))
+    
+#sets
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n_one = int(raw_input())
+set_one = set(map(int, raw_input().split()))
+n_two = int(raw_input())
+set_two = set(map(int, raw_input().split()))
+dif = set_one.symmetric_difference(set_two)
+x = len(dif)
+arr = []
+for _ in range (0, x) :
+    arr.append(dif.pop())
+arr.sort()
+arr.reverse()
+for _ in range (0, len(arr)) :
+    print arr.pop()
