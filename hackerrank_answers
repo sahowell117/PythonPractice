@@ -1,4 +1,4 @@
-//given a list of numbers, find the second largest
+#given a list of numbers, find the second largest
 if __name__ == '__main__':
     n = int(raw_input())
     arr = map(int, raw_input().split())
@@ -14,7 +14,7 @@ if __name__ == '__main__':
     print(second_largest(arr))
     
     
-//given a list of students (name, score) print the names in alphabetical order of the second lowest scorers    
+#given a list of students (name, score) print the names in alphabetical order of the second lowest scorers    
 students = []
 scores = []
 for _ in range(int(raw_input())):
@@ -39,12 +39,12 @@ second_worst_students.sort()
 for student in second_worst_students:
     print(student)   
     
-//sample input
-//2
-//Harsh 25 26.5 28
-//Anurag 26 28 30
-//Harsh
-//sample output : 26.50
+#sample input
+#2
+#Harsh 25 26.5 28
+#Anurag 26 28 30
+#Harsh
+#sample output : 26.50
 if __name__ == '__main__':
     n = int(raw_input())
     student_marks = {}
