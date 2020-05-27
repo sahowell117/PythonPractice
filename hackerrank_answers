@@ -107,3 +107,24 @@ if __name__ == '__main__':
     i, c = raw_input().split()
     s_new = mutate_string(s, int(i), c)
     print s_new
+
+def minion_game(string):
+    vowels = ['A', 'E', 'I', 'O', 'U']
+    stuart_score = 0
+    kevin_score = 0
+    for i in range(len(s)):
+        if s[i] in vowels:
+            kevin_score += (len(s)-i)
+        else:
+            stuart_score += (len(s)-i)
+    if stuart_score > kevin_score :
+        print("Stuart " + str(stuart_score))
+    elif kevin_score > stuart_score :
+        print("Kevin " + str(kevin_score))
+    else:
+        print("Draw")        
+    # your code goes here
+
+if __name__ == '__main__':
+    s = raw_input()
+    minion_game(s)
